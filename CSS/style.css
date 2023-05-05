@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&family=Roboto:wght@100;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: #0F1823;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -54,7 +58,14 @@ header{
     color: #fff;
     padding: 3%;
     position: relative;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    transition: .5s;
+}
+
+.apresentacao .botao button:hover{
+    transform: scale(1.1);
+    box-shadow: -.2em .2em .6em #000;
 }
 
 main{
@@ -112,10 +123,17 @@ main{
     top: 50%;
     transform: translateY(-50%);
     overflow: hidden;
+    font-size: 1.1em;
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
 }
 
 .informacao h2{
     font-size: 2.5em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #FF4763;
+    padding-bottom: 4%;
 }
 
 .personagens{
