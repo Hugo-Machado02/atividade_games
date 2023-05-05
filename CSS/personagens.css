@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&family=Roboto:wght@100;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +10,14 @@ body{
     display: block;
     position: relative;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     background-image: url(../imagens/bg_personagens.jpg);
     background-position: fixed;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     background-size: cover;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -45,11 +48,11 @@ header{
     list-style: none;
     font-size: 1.2em;
     color: #fff;
-    transition: .3s;
+    transition: .5s;
 }
 .item a{
     color: #fff;
-    transition: .3s;
+    transition: .5s;
 }
 
 .item:hover{
@@ -66,45 +69,97 @@ main{
     height: 93vh;
 }
 
-.container{
-    display: block;
-    width: 100%;
+.titulo h1{
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 4%;
 }
 
-.elemento, .imagem{
-    display: inline-block;
-    width: 45%;
-    text-align: center;
-    box-sizing: border-box;
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.imagem{
+    width: 40%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.elemento{
+    width: 60%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagem figure{
     display: flex;
     position: relative;
     justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 60vh;
-    text-align: center;
+    width: 60%;
+    border: .4em solid #FF4763;
+    border-radius: 1em;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
-
 .imagem figure img{
+    display: flex;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.box_itens{
+    display: block;
+}
+
+.individualidades{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 8%;
+}
+
 .individualidades ul{
     display: flex;
     flex-direction: row;
+    gap: 6%;
     align-items: top;
 }
+
 
 .habilidades{
     display: inline-block;
     position: relative;
+    justify-content: start;
     width: 40%;
 }
 
+.habilidades h2{
+    display: block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    color: #FF4763;
+    font-size: 1.8em;
+}
+
+.habilidades p{
+    display: block;
+    position: relative;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .85em;
+}
